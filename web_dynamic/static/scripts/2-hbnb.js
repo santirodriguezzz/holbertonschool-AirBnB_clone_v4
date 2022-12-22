@@ -48,5 +48,4 @@ window.onload = function () {
       element.classList.remove('available');
     }
   })
-  .catch(error => console.log(error));
 };
