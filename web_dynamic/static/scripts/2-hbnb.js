@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// Listen for changes on each input checkbox tag
+//1. Listen for changes on each input checkbox tag
 
 window.onload = function () {
   const qsel = document.querySelector('div .amenities h4'); // permite recuperar un elemento del DOM
@@ -29,4 +29,24 @@ window.onload = function () {
       }
     });
   }
+
+  // 2.
+  // Request http://0.0.0.0:5001/api/v1/status/:
+  // If in the status is “OK”, add the class available to the div#api_status
+  // Otherwise, remove the class available to the div#api_status
+
+  const element = document.getElementById('api_status');
+
+  fetch('http://localhost:5001/api/v1/status/')
+  .then(response => response.json())
+  .then(data => {
+    if (data.status === 'OK') {
+      console.log("if")
+      element.classList.add('available');
+    } else {
+      console.log("else")
+      element.classList.remove('available');
+    }
+  })
+  .catch(error => console.log(error));
 };
