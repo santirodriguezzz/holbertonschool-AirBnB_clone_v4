@@ -1,12 +1,14 @@
 #!/usr/bin/node
+// Listen for changes on each input checkbox tag
+
 window.onload = function () {
-  const qsel = document.querySelector('div.amenities h4'); // permite recuperar un elemento del DOM
+  const qsel = document.querySelector('div .amenities h4'); // permite recuperar un elemento del DOM
   const gt = document.getElementsByTagName('input'); // devolverá todos los input(elementos) del documento
   const leng = gt.length;
   const arr = [];
 
   for (let i = 0; i < leng; i++) {
-    const checkbox = document.getAnimationsByTagName('input')[i];
+    const checkbox = gt[i];
     checkbox.addEventListener('change', (event) => {
       if (event.currentTarget.checked) {
         if (String(qsel.innerHTML) === '&nbsp;') {
