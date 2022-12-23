@@ -5,13 +5,6 @@
         "updated_at": "2022-12-21T01:10:12.388082",
         "__class__": "City"
     },
-    "Place.36231575-dc20-4205-8925-4fb1ca5b29b7": {
-        "id": "36231575-dc20-4205-8925-4fb1ca5b29b7",
-        "created_at": "2022-12-21T01:10:18.308362",
-        "updated_at": "2022-12-21T01:21:04.012253",
-        "user": "2ea40ae9-44da-480b-a3af-db102edee3a6",
-        "__class__": "Place"
-    },
     "Amenity.325005e5-3a1a-4cfb-88b5-a0af091415b3": {
         "id": "325005e5-3a1a-4cfb-88b5-a0af091415b3",
         "created_at": "2022-12-21T01:10:24.433693",
@@ -22,7 +15,9 @@
     "User.2ea40ae9-44da-480b-a3af-db102edee3a6": {
         "id": "2ea40ae9-44da-480b-a3af-db102edee3a6",
         "created_at": "2022-12-21T01:20:09.180757",
-        "updated_at": "2022-12-21T01:20:09.180892",
+        "updated_at": "2022-12-22T23:51:39.863588",
+        "first_name": "Leo",
+        "last_name": "DiCaprio",
         "__class__": "User"
     },
     "Amenity.b69f4975-0887-4710-a497-b56dd2b62bdf": {
@@ -59,5 +54,100 @@
         "updated_at": "2022-12-21T02:24:25.025558",
         "name": "Pet friendly",
         "__class__": "Amenity"
+    },
+    "Place.13c933f6-74a8-402e-a90f-ffa48ae3e970": {
+        "id": "13c933f6-74a8-402e-a90f-ffa48ae3e970",
+        "created_at": "2022-12-22T23:35:04.925687",
+        "updated_at": "2022-12-22T23:46:18.499003",
+        "city_id": "69a474b1-551c-402e-a2bc-48558518f5a2",
+        "amenity_ids": "469451cf-19af-4ef8-9f23-084d1c2ad214",
+        "user": "2ea40ae9-44da-480b-a3af-db102edee3a6",
+        "name": "Punta del Este",
+        "price_by_night": 50,
+        "__class__": "Place"
+    },
+    "Place.6aee27ef-4ebc-4a15-864d-442c8ab75aef": {
+        "id": "6aee27ef-4ebc-4a15-864d-442c8ab75aef",
+        "created_at": "2022-12-22T23:35:06.315688",
+        "updated_at": "2022-12-22T23:46:39.177028",
+        "city_id": "69a474b1-551c-402e-a2bc-48558518f5a2",
+        "amenity_ids": "c59e79fc-5888-4d2f-9efd-3d0234b42f1d",
+        "user": "2ea40ae9-44da-480b-a3af-db102edee3a6",
+        "name": "Piriapolis",
+        "price_by_night": 20,
+        "__class__": "Place"
+    },
+    "Place.fa3f50e3-d3d8-4fad-a30f-3b241db2be4d": {
+        "id": "fa3f50e3-d3d8-4fad-a30f-3b241db2be4d",
+        "created_at": "2022-12-22T23:35:07.182483",
+        "updated_at": "2022-12-22T23:46:56.228596",
+        "city_id": "69a474b1-551c-402e-a2bc-48558518f5a2",
+        "amenity_ids": "e83d320b-d7cf-4b23-b88d-d15939d89703",
+        "user": "2ea40ae9-44da-480b-a3af-db102edee3a6",
+        "name": "La Paloma",
+        "price_by_night": 40,
+        "__class__": "Place"
+    },
+    "Place.835fcb73-b057-4984-8b25-50a9050eff8b": {
+        "id": "835fcb73-b057-4984-8b25-50a9050eff8b",
+        "created_at": "2022-12-22T23:35:08.338115",
+        "updated_at": "2022-12-22T23:47:15.727669",
+        "city_id": "2accfd55-e42f-4202-84f0-6be9c52809ab",
+        "amenity_ids": "c59e79fc-5888-4d2f-9efd-3d0234b42f1d",
+        "user": "2ea40ae9-44da-480b-a3af-db102edee3a6",
+        "name": "Cuchilla Alta",
+        "price_by_night": 15,
+        "__class__": "Place"
+    },
+    "Place.9d6e337d-451b-47dc-98c6-b6d902c3a9cd": {
+        "id": "9d6e337d-451b-47dc-98c6-b6d902c3a9cd",
+        "created_at": "2022-12-22T23:35:09.259254",
+        "updated_at": "2022-12-22T23:47:29.485024",
+        "amenity_ids": "469451cf-19af-4ef8-9f23-084d1c2ad214",
+        "user": "2ea40ae9-44da-480b-a3af-db102edee3a6",
+        "name": "Termas del Dayman",
+        "price_by_night": 25,
+        "__class__": "Place"
+    },
+    "City.2accfd55-e42f-4202-84f0-6be9c52809ab": {
+        "id": "2accfd55-e42f-4202-84f0-6be9c52809ab",
+        "created_at": "2022-12-22T23:35:33.381168",
+        "updated_at": "2022-12-22T23:35:33.381230",
+        "__class__": "City"
+    },
+    "State.91d0e3c9-cf96-48b6-9cbe-d3d667da631a": {
+        "id": "91d0e3c9-cf96-48b6-9cbe-d3d667da631a",
+        "created_at": "2022-12-23T00:04:28.888582",
+        "updated_at": "2022-12-23T00:04:28.888652",
+        "name": "Rocha",
+        "__class__": "State"
+    },
+    "State.8951a49a-3bc0-4439-9f5b-391e18f6b7f7": {
+        "id": "8951a49a-3bc0-4439-9f5b-391e18f6b7f7",
+        "created_at": "2022-12-23T00:04:30.328744",
+        "updated_at": "2022-12-23T00:04:30.328808",
+        "name": "Maldonado",
+        "__class__": "State"
+    },
+    "State.a52f8b04-5491-44df-9a40-55a237198a56": {
+        "id": "a52f8b04-5491-44df-9a40-55a237198a56",
+        "created_at": "2022-12-23T00:04:30.912892",
+        "updated_at": "2022-12-23T00:04:30.912954",
+        "name": "Salto",
+        "__class__": "State"
+    },
+    "State.3498cf7a-6782-4780-bca9-b18b578671db": {
+        "id": "3498cf7a-6782-4780-bca9-b18b578671db",
+        "created_at": "2022-12-23T00:04:31.624680",
+        "updated_at": "2022-12-23T00:04:31.624739",
+        "name": "Canelones",
+        "__class__": "State"
+    },
+    "State.0d270656-b664-4507-bc32-5e5d006fe4ba": {
+        "id": "0d270656-b664-4507-bc32-5e5d006fe4ba",
+        "created_at": "2022-12-23T00:04:32.279590",
+        "updated_at": "2022-12-23T00:04:32.279648",
+        "name": "Montevideo",
+        "__class__": "State"
     }
 }
