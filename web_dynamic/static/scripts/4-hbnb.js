@@ -50,39 +50,40 @@ window.onload = function () {
     .then(response => response.json())
     .then(data => {
       if (data.status === 'OK') {
-        console.log("Status: OK --> class available was added")
+        console.log('Status: OK --> class available was added');
         element.classList.add('available');
       } else {
-        console.log("Class available was removed")
+        console.log('Class available was removed');
         element.classList.remove('available');
       }
+    });
+
+  // task 4.
+  placesFromFrontend();
+
+  // task 5.
+  // Implement a filter:
+  // When the button tag is clicked, a new POST request to places_search
+  // should be made with the list of Amenities checked
+  const button = document.querySelector('.button');
+  button.addEventListener('click', amenitiesFilter);
+
+  function amenitiesFilter () {
+    fetch('http://localhost:5001/api/v1/places_search', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ amenities: amenitiesID })
     })
-
-    // task 4.
-    placesFromFrontend();
-    
-    // task 5. 
-    // Implement a filter:
-    // When the button tag is clicked, a new POST request to places_search
-    // should be made with the list of Amenities checked
-    const button =  document.querySelector('.button');
-    button.addEventListener("click", amenitiesFilter);
-
-    function amenitiesFilter () {
-      fetch('http://localhost:5001/api/v1/places_search', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({amenities: amenitiesID})
-      })
       .then(response => response.json())
       .then(data => {
         if (amenitiesID.length === 0) {
           placesFromFrontend();
           return;
         }
-        const placesSection = document. querySelector('.places');
+
+        const placesSection = document.querySelector('.places');
         for (place of data) {
           for (id of place.amenity_ids) {
             if (id in amenitiesID) {
@@ -93,9 +94,9 @@ window.onload = function () {
                     <div class="price_by_night">$${place.price_by_night}</div>
                   </div>
                   <div class="information">
-                    <div class="max_guest">${place.max_guest} Guest${place.max_guest != 1 ? "s" : ""}</div>
-                          <div class="number_rooms">${place.number_rooms} Bedroom${place.number_rooms != 1 ? "s" : ""}</div>
-                          <div class="number_bathrooms">${place.number_bathrooms} Bathroom${place.number_bathrooms != 1 ? "s" : ""}</div>
+                    <div class="max_guest">${place.max_guest} Guest${place.max_guest != 1 ? 's' : ''}</div>
+                          <div class="number_rooms">${place.number_rooms} Bedroom${place.number_rooms != 1 ? 's' : ''}</div>
+                          <div class="number_bathrooms">${place.number_bathrooms} Bathroom${place.number_bathrooms != 1 ? 's' : ''}</div>
                   </div>
                         <div class="description">
                     ${place.description}
@@ -107,7 +108,8 @@ window.onload = function () {
           }
         }
       }
-    )}
+      );
+  }
 };
 
 function placesFromFrontend () {
@@ -132,9 +134,9 @@ function placesFromFrontend () {
               <div class="price_by_night">$${place.price_by_night}</div>
             </div>
             <div class="information">
-              <div class="max_guest">${place.max_guest} Guest${place.max_guest != 1 ? "s" : ""}</div>
-                    <div class="number_rooms">${place.number_rooms} Bedroom${place.number_rooms != 1 ? "s" : ""}</div>
-                    <div class="number_bathrooms">${place.number_bathrooms} Bathroom${place.number_bathrooms != 1 ? "s" : ""}</div>
+              <div class="max_guest">${place.max_guest} Guest${place.max_guest != 1 ? 's' : ''}</div>
+                    <div class="number_rooms">${place.number_rooms} Bedroom${place.number_rooms != 1 ? 's' : ''}</div>
+                    <div class="number_bathrooms">${place.number_bathrooms} Bathroom${place.number_bathrooms != 1 ? 's' : ''}</div>
             </div>
                   <div class="description">
               ${place.description}
@@ -142,5 +144,5 @@ function placesFromFrontend () {
           </article>
         `;
       }
-    })
-};
+    });
+}
