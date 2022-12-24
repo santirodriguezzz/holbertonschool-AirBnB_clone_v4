@@ -10,6 +10,7 @@
         "created_at": "2022-12-21T01:10:24.433693",
         "updated_at": "2022-12-21T23:29:24.048758",
         "name": "Parking",
+        "place_id": null,
         "__class__": "Amenity"
     },
     "User.2ea40ae9-44da-480b-a3af-db102edee3a6": {
@@ -25,6 +26,7 @@
         "created_at": "2022-12-21T02:21:57.136115",
         "updated_at": "2022-12-21T02:22:26.772632",
         "name": "Wifi",
+        "place_id": null,
         "__class__": "Amenity"
     },
     "Amenity.a1cffd49-14c4-46f9-a2ce-63f999715742": {
@@ -32,6 +34,7 @@
         "created_at": "2022-12-21T02:21:59.340233",
         "updated_at": "2022-12-21T02:22:48.635832",
         "name": "Pool",
+        "place_id": null,
         "__class__": "Amenity"
     },
     "Amenity.e83d320b-d7cf-4b23-b88d-d15939d89703": {
@@ -39,6 +42,7 @@
         "created_at": "2022-12-21T02:22:00.151001",
         "updated_at": "2022-12-21T02:23:13.135894",
         "name": "Ocean views",
+        "place_id": "fa3f50e3-d3d8-4fad-a30f-3b241db2be4d",
         "__class__": "Amenity"
     },
     "Amenity.469451cf-19af-4ef8-9f23-084d1c2ad214": {
@@ -46,6 +50,7 @@
         "created_at": "2022-12-21T02:22:00.784294",
         "updated_at": "2022-12-21T02:23:58.468435",
         "name": "Netflix and Cable TV",
+        "place_id": "13c933f6-74a8-402e-a90f-ffa48ae3e970",
         "__class__": "Amenity"
     },
     "Amenity.c59e79fc-5888-4d2f-9efd-3d0234b42f1d": {
@@ -53,6 +58,7 @@
         "created_at": "2022-12-21T02:22:01.308426",
         "updated_at": "2022-12-21T02:24:25.025558",
         "name": "Pet friendly",
+        "place_id": "6aee27ef-4ebc-4a15-864d-442c8ab75aef",
         "__class__": "Amenity"
     },
     "Place.13c933f6-74a8-402e-a90f-ffa48ae3e970": {
@@ -82,7 +88,7 @@
         "created_at": "2022-12-22T23:35:07.182483",
         "updated_at": "2022-12-22T23:46:56.228596",
         "city_id": "69a474b1-551c-402e-a2bc-48558518f5a2",
-        "amenity_ids": "e83d320b-d7cf-4b23-b88d-d15939d89703",
+        "amenity_ids": "469451cf-19af-4ef8-9f23-084d1c2ad214",
         "user": "2ea40ae9-44da-480b-a3af-db102edee3a6",
         "name": "La Paloma",
         "price_by_night": 40,
@@ -103,7 +109,7 @@
         "id": "9d6e337d-451b-47dc-98c6-b6d902c3a9cd",
         "created_at": "2022-12-22T23:35:09.259254",
         "updated_at": "2022-12-22T23:47:29.485024",
-        "amenity_ids": "469451cf-19af-4ef8-9f23-084d1c2ad214",
+        "amenity_ids": "",
         "user": "2ea40ae9-44da-480b-a3af-db102edee3a6",
         "name": "Termas del Dayman",
         "price_by_night": 25,
@@ -149,5 +155,45 @@
         "updated_at": "2022-12-23T00:04:32.279648",
         "name": "Montevideo",
         "__class__": "State"
+    },
+    "City.a617ca40-74ab-4ec2-bff8-a66d2f66cdc6": {
+        "id": "a617ca40-74ab-4ec2-bff8-a66d2f66cdc6",
+        "created_at": "2022-12-23T22:43:50.996963",
+        "updated_at": "2022-12-23T22:43:50.997111",
+        "name":"La Paloma",
+        "state_id": "91d0e3c9-cf96-48b6-9cbe-d3d667da631a",
+        "__class__": "City"
+    },
+    "City.5cac71e8-6434-421d-b7dc-5997b6d1c462": {
+        "id": "5cac71e8-6434-421d-b7dc-5997b6d1c462",
+        "created_at": "2022-12-23T22:43:54.843528",
+        "updated_at": "2022-12-23T22:43:54.843625",
+        "name":"Piriapolis",
+        "state_id": "3498cf7a-6782-4780-bca9-b18b578671db",
+        "__class__": "City"
+    },
+    "City.0103c93b-fb48-4905-b8b0-394f3b0f064e": {
+        "id": "0103c93b-fb48-4905-b8b0-394f3b0f064e",
+        "created_at": "2022-12-23T22:43:55.888848",
+        "updated_at": "2022-12-23T22:43:55.888936",
+        "name":"Cuchilla Alta",
+        "state_id": "3498cf7a-6782-4780-bca9-b18b578671db",
+        "__class__": "City"
+    },
+    "City.483f2278-299d-403c-aa32-038e1fd524b4": {
+        "id": "483f2278-299d-403c-aa32-038e1fd524b4",
+        "created_at": "2022-12-23T22:43:56.651740",
+        "updated_at": "2022-12-23T22:43:56.651824",
+        "name":"Punta del Este",
+        "state_id": "8951a49a-3bc0-4439-9f5b-391e18f6b7f7",
+        "__class__": "City"
+    },
+    "City.1fcba88b-51f6-4608-81ea-a675e48aa6b8": {
+        "id": "1fcba88b-51f6-4608-81ea-a675e48aa6b8",
+        "created_at": "2022-12-23T22:43:57.235725",
+        "updated_at": "2022-12-23T22:43:57.235789",
+        "name":"Termas del Dayman",
+        "state_id": "a52f8b04-5491-44df-9a40-55a237198a56",
+        "__class__": "City"
     }
 }
